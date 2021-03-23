@@ -1,0 +1,186 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #f0e4dc;
+}
+
+
+img{
+  width: 100%;
+}
+
+.banner{
+  height: 250px;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1920px;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.comodities{
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  margin: auto;
+}
+.comodities>.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.comodities>.img>img{
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.comodities>.img>img:first-child{
+  height: 40px;
+  width: 55px;
+}
+
+.houses{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.house{
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.houses>div{
+  background-color: #e2cabd;
+  margin: 10px;
+  outline: 2px solid #bbb2ad;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+}
+
+.houses>div>.img{
+  min-width: 150px;
+}
+
+.houses>div>.text,
+.houses>div>.title{
+  text-align: center;
+  
+  margin: 5px 0;
+}
+
+.houses>div>.title{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.houses>div>.text{
+  font-size: 20px;
+}
+
+.showHouses{
+  padding: 20px 0;
+  background-size: cover;
+  border-bottom: 4px solid #bbb2ad;
+  border-top: 4px solid #bbb2ad;
+}
+
+.showHouses>div{
+  margin: 20px auto;
+  margin-bottom: 0;
+  background-color: #e2cabd;
+  width: 740px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377)
+}
+
+.mapContainer{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.mapContainer>.info{
+  padding: 20px;
+  max-width: 45%;
+}
+
+.mapContainer>.info>.text,
+.mapContainer>.info>.title{
+  font-size: 20px;
+  
+  margin: 2px;
+}
+
+.mapContainer>.info>.title{
+  font-size: 27px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+iframe{
+  outline: 4px solid #bbb2ad;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 750px){
+  body{
+    
+  }
+
+  .banner{
+    background-attachment: local;
+    background-size: cover;
+    background-position: 0 0;
+    height: 150px;
+  }
+
+  .houses{
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .houses>div>.title{
+    font-size: 22px;
+  }
+  
+  .houses>div>.text{
+    font-size: 16px;
+  }
+
+  .showHouses{
+    display: none;
+  }
+
+  .mapContainer{
+    flex-direction: column;
+  }
+
+  .mapContainer>.info{
+    max-width: 100%;
+  }
+
+  .comodities{
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  iframe{
+    width: 90%;
+    margin: 5px auto;
+  }
+}
